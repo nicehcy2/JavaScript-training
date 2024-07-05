@@ -13,7 +13,8 @@ let data = [];
         }
 	}
 
-    Solution();
+    	Solution();
+	process.stdout.wrtie("Hello, World!");
 	
 	process.exit();
 })();
