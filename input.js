@@ -14,7 +14,6 @@ let data = [];
 	}
 
     	Solution();
-	process.stdout.wrtie("Hello, World!");
 	
 	process.exit();
 })();
