@@ -3,3 +3,4 @@
 
 ## MDN 공식 레퍼런스
 https://developer.mozilla.org/ko/docs/Learn/JavaScript
+https://developer.mozilla.org/ko/docs/Web/JavaScript
