@@ -1,3 +1,5 @@
+const readline = require('readline');
+
 let data = [];
 
 (async () => {
