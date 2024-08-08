@@ -61,3 +61,64 @@ str.toUpperCase();
 // 2. toLowerCase 소문자 변환
 str = 'ABCDEFG';
 str.toLowerCase();
+
+/**
+ * 5. 문자열 파싱 및 변환
+ */
+// 1. indexOf - 문자열.indexOf(찾는 문자열)
+// 문자열 속 원하는 문자열을 찾아 그 처음 인덱스를 리턴
+str = 'When i was your man';
+str.indexOf('our');
+
+// 2. includes - 문자열.includes(찾는 문자열)
+// 문자열 속에서 원하는 문자열이 있다면 true, 없다면 false를 리턴
+str = 'When i was your man';
+str.includes('our');
+
+// 3. replace - 문자열.replace(찾는 문자열, 바꿀 문자열);
+// 문자열 속에서 해당하는 문자열을 뒤에 인자로 받은 문자열로 치환
+str = "I am an IronMan";
+str.replace("IronMan", "Hulk"); // 하나만
+str.replaceAll("I", "He"); // 전체
+
+// 4. split - 문자열.split(기준 문자열)
+// 문자열을 기준 문자열 기준으로 잘라 배열을 만들어준다.
+str = "Column: 12";
+let arr = str.split(': ');
+
+// 5. repeat - 문자열.repeat(반복횟수)
+// 해당 문자열을 반복횟수만큼 붙여서 리턴한다.
+str = "123";
+str.repeat(3);
+
+// 6. trim() - 문자열 양 끝의 공백 제거
+const trimmed = '  Hello, world!  '.trim();
+
+// 7. length - 문자열 길이
+const length = str1.length;
+
+// 8. join - array.join(separator)
+const fruits = ['apple', 'banana', 'cherry'];
+str = fruits.join(' - ');
+
+/**
+ * 6. 문자열 타입 변환
+ */
+// 1. charCodeAt - 문자열.charCodeAt()
+// 해당 문자열을 아스키코드로 바꿨을 때 값을 리턴한다.
+str = 'A';
+str.charCodeAt();
+
+// 2. String.fromCharCode(숫자)
+// 원하는 숫자에 대한 아스키 값을 리턴한다.
+str = 65;
+String.fromCharCode(str);
+
+// 3. toString - 숫자.toString(변환 형태 숫자)
+let num = 10;
+console.log(num.toString());
+
+// 4. parseXXX
+const parseIntNum = parseInt('123');
+const parseFloatNum = parseFloat('123.34');
+const plusNum = +'123';
